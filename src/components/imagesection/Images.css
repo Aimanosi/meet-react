@@ -1,0 +1,67 @@
+#images {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 2rem;
+  column-gap: 14px;
+}
+
+#images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  #images {
+    display: block;
+  }
+
+  #images img {
+    border-radius: 0;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1199px) {
+  header img {
+    display: none;
+  }
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/image-hero-tablet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-bottom: 2rem;
+  }
+  .vertical-line {
+    display: none;
+  }
+
+  .horizontal-break {
+    display: flex;
+  }
+
+  .horizontal-line {
+    width: 40%;
+    border-top: 1px solid gray;
+    margin: auto;
+  }
+
+  #images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  #images img {
+    border-radius: 0;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-bottom: 1rem;
+  }
+}

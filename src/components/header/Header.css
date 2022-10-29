@@ -1,0 +1,130 @@
+header {
+  display: flex;
+  padding-top: 6rem;
+}
+
+#header-text {
+  text-align: center;
+  padding: 0 5rem;
+}
+
+button {
+  color: #fff;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  border-style: none;
+}
+
+#download:hover,
+#what-is-it:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.7s;
+  outline: 1px solid black;
+}
+
+#download {
+  background-color: #4b97a7;
+  margin-right: 14px;
+}
+
+#what-is-it {
+  background-color: #8660ae;
+}
+
+.line {
+  height: 50px;
+  width: 0;
+  color: rgb(92, 88, 88);
+  border-left: 1px solid black;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.number {
+  text-align: center;
+}
+
+span {
+  border: 1px solid gray;
+  border-radius: 5rem;
+  padding: 1rem 1.2rem;
+}
+
+.horizontal-break {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  header img {
+    display: none;
+  }
+
+  header button {
+    display: block;
+    margin: auto;
+  }
+
+  #download {
+    margin: 0;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  /* .vertical-line {
+    display: none;
+  } */
+
+  .horizontal-break {
+    display: flex;
+  }
+  .horizontal-line {
+    width: 40%;
+    border-top: 1px solid gray;
+    margin: auto;
+  }
+  .line {
+    height: 50px;
+    width: 0;
+    color: rgb(92, 88, 88);
+    border-left: 1px solid black;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .number {
+    text-align: center;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1199px) {
+  header img {
+    display: none;
+  }
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/image-hero-tablet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: baseline;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .horizontal-break {
+    display: flex;
+  }
+
+  .horizontal-line {
+    width: 40%;
+    border-top: 1px solid gray;
+    margin: auto;
+  }
+}
